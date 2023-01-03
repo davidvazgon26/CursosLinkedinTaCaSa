@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Spring Security.iml" filepath="$PROJECT_DIR$/.idea/Spring Security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/04_03/04_03_end/guest-app/guest-app.iml" filepath="$PROJECT_DIR$/Chapter 4/04_03/04_03_end/guest-app/guest-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/04_03/04_03_begin/guest-app/guest-app (1).iml" filepath="$PROJECT_DIR$/Chapter 4/04_03/04_03_begin/guest-app/guest-app (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/04_04/04_04_end/guest-app/guest-app (2).iml" filepath="$PROJECT_DIR$/Chapter 4/04_04/04_04_end/guest-app/guest-app (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/04_04/04_04_begin/guest-app/guest-app (3).iml" filepath="$PROJECT_DIR$/Chapter 4/04_04/04_04_begin/guest-app/guest-app (3).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/04_05/04_05_begin/guest-app/guest-app (4).iml" filepath="$PROJECT_DIR$/Chapter 4/04_05/04_05_begin/guest-app/guest-app (4).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/04_03/04_03_end/guest-services/guest-services.iml" filepath="$PROJECT_DIR$/Chapter 4/04_03/04_03_end/guest-services/guest-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/04_03/04_03_begin/guest-services/guest-services (1).iml" filepath="$PROJECT_DIR$/Chapter 4/04_03/04_03_begin/guest-services/guest-services (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/04_04/04_04_end/guest-services/guest-services (2).iml" filepath="$PROJECT_DIR$/Chapter 4/04_04/04_04_end/guest-services/guest-services (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/04_04/04_04_begin/guest-services/guest-services (3).iml" filepath="$PROJECT_DIR$/Chapter 4/04_04/04_04_begin/guest-services/guest-services (3).iml" />
+    </modules>
+  </component>
+</project>

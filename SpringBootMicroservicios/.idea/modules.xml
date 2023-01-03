@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Spring Boot Microservicios.iml" filepath="$PROJECT_DIR$/.idea/Spring Boot Microservicios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Capitulo1/explorecali/explorecali.iml" filepath="$PROJECT_DIR$/Capitulo1/explorecali/explorecali.iml" />
+    </modules>
+  </component>
+</project>

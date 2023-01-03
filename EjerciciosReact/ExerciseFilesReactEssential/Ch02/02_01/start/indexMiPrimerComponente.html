@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <!-- utilizo babel para renderizar o pasar de tags HTML a JSX lo que esta dentro de render-->
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js" crossorigin></script>  
+  <title>React ⚛️</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+
+    function Header(props){
+        console.log(props);
+        return(
+            <header>
+            <h1>{props.name}'s Kitchen</h1>
+            </header>
+        );
+    }
+
+    function Main (props){
+        return(
+            <section>
+                <img 
+                height={200}
+                src="https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/lets-grill-this-linda-woods.jpg" 
+                alt="restaurant"/>
+                <ul>
+                    {props.dishes.map((dish, i) =>  <li key={i}>{dish}</li>)}
+                    </ul>
+                </section>
+        );
+    }
+
+    function Footer(props){
+        return(
+            <footer>
+                <p>Copyright {props.year}</p>
+                </footer>
+        )
+    }
+
+    const dishes = [
+        "Black Bean Soup",
+        "Macaroni and Cheese",
+        "Salmon and Potatoes"
+    ];
+
+    function App(){
+        return (
+            <React.Fragment>
+        <Header name="David"/>
+        <Main adjective="delicious" dishes={dishes}/>
+        <Footer year={new Date().getFullYear() }/>
+     </React.Fragment>
+        );
+    }
+   
+    ReactDOM.render(
+     <App/>,
+      document.getElementById('root')
+    );
+  </script>
+</body>
+
+</html>

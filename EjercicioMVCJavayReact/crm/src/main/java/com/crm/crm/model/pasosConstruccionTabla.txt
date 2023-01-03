@@ -1,0 +1,2 @@
+Creamos la entidad (Tabla)
+Creamos el repositorio

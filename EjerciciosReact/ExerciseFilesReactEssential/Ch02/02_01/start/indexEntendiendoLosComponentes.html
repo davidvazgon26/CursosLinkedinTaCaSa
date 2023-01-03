@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <!-- utilizo babel para renderizar o pasar de tags HTML a JSX lo que esta dentro de render-->
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js" crossorigin></script>  
+  <title>React ⚛️</title>
+</head>
+
+<body>
+  <!-- creando punto de entrada para crear tags con react -->
+  <div id="root"></div>
+  <!-- <h1>Getting Started with React</h1> -->
+  <script type="text/babel">
+    // let ul =  React.createElement(
+    //   "ul", 
+    //   {style: {color: "blue"}}, 
+    //   React.createElement("li", null, "Monday"),
+    //   React.createElement("li", null, "Tuesday"),
+    //   React.createElement("li", null, "Wednesday"),
+    //   );
+
+    // ReactDOM.render(
+    //   ul,
+    //   document.getElementById('root')
+    // )
+    let uno = "uno"
+    let dos = "dos"
+    let tres = "tres"
+    ReactDOM.render(
+      <ul>
+        <li>{uno}</li>
+        <li>{dos}</li>
+        <li>{tres.toUpperCase()}</li>
+        </ul>,
+      document.getElementById('root')
+    );
+  </script>
+</body>
+
+</html>

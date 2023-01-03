@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="guest-app (1)" />
+        <module name="guest-services (2)" />
+        <module name="guest-app" />
+        <module name="guest-services (1)" />
+        <module name="guest-services (3)" />
+        <module name="guest-app (4)" />
+        <module name="guest-app (3)" />
+        <module name="guest-services" />
+        <module name="guest-app (2)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="guest-app" target="1.8" />
+      <module name="guest-app (1)" target="1.8" />
+      <module name="guest-app (2)" target="1.8" />
+      <module name="guest-app (3)" target="1.8" />
+      <module name="guest-app (4)" target="1.8" />
+      <module name="guest-services" target="1.8" />
+      <module name="guest-services (1)" target="1.8" />
+      <module name="guest-services (2)" target="1.8" />
+      <module name="guest-services (3)" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="guest-app" options="-parameters" />
+      <module name="guest-app (1)" options="-parameters" />
+      <module name="guest-app (2)" options="-parameters" />
+      <module name="guest-app (3)" options="-parameters" />
+      <module name="guest-app (4)" options="-parameters" />
+      <module name="guest-services" options="-parameters" />
+      <module name="guest-services (1)" options="-parameters" />
+      <module name="guest-services (2)" options="-parameters" />
+      <module name="guest-services (3)" options="-parameters" />
+    </option>
+  </component>
+</project>

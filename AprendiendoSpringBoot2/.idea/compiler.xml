@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fizz-buzz (7)" />
+        <module name="room-clr (13)" />
+        <module name="booting-web (12)" />
+        <module name="booting-web (24)" />
+        <module name="fizz-buzz (15)" />
+        <module name="booting-web (36)" />
+        <module name="room-clr (6)" />
+        <module name="room-cleaner-notifier (4)" />
+        <module name="room-web-app (18)" />
+        <module name="booting-web (5)" />
+        <module name="room-web-app (22)" />
+        <module name="room-web-app (6)" />
+        <module name="fizz-buzz (16)" />
+        <module name="room-web-app (10)" />
+        <module name="room-clr (12)" />
+        <module name="booting-web (13)" />
+        <module name="room-clr (5)" />
+        <module name="booting-web (25)" />
+        <module name="booting-web (37)" />
+        <module name="fizz-buzz (6)" />
+        <module name="fizz-buzz" />
+        <module name="room-web-app (17)" />
+        <module name="room-web-app (29)" />
+        <module name="booting-web (6)" />
+        <module name="room-web-app (5)" />
+        <module name="fizz-buzz (17)" />
+        <module name="room-web-app (21)" />
+        <module name="booting-web (10)" />
+        <module name="booting-web (22)" />
+        <module name="booting-web (34)" />
+        <module name="room-clr (11)" />
+        <module name="booting-web (18)" />
+        <module name="booting-web" />
+        <module name="room-clr (4)" />
+        <module name="room-clr (19)" />
+        <module name="fizz-buzz (5)" />
+        <module name="booting-web (3)" />
+        <module name="room-web-app (28)" />
+        <module name="room-web-app (16)" />
+        <module name="room-web-app (4)" />
+        <module name="fizz-buzz (18)" />
+        <module name="room-web-app (20)" />
+        <module name="booting-web (11)" />
+        <module name="fizz-buzz (10)" />
+        <module name="booting-web (23)" />
+        <module name="room-clr (10)" />
+        <module name="booting-web (35)" />
+        <module name="booting-web (19)" />
+        <module name="room-clr (3)" />
+        <module name="room-clr (18)" />
+        <module name="fizz-buzz (4)" />
+        <module name="booting-web (4)" />
+        <module name="room-web-app (15)" />
+        <module name="room-web-app (27)" />
+        <module name="room-web-app (31)" />
+        <module name="room-web-app (3)" />
+        <module name="fizz-buzz (11)" />
+        <module name="booting-web (32)" />
+        <module name="room-cleaner-notifier" />
+        <module name="booting-web (20)" />
+        <module name="room-clr (2)" />
+        <module name="booting-web (9)" />
+        <module name="fizz-buzz (3)" />
+        <module name="room-clr (17)" />
+        <module name="booting-web (16)" />
+        <module name="booting-web (28)" />
+        <module name="booting-web (1)" />
+        <module name="room-web-app (26)" />
+        <module name="room-web-app (14)" />
+        <module name="room-web-app (2)" />
+        <module name="room-web-app (30)" />
+        <module name="booting-web (21)" />
+        <module name="booting-web (33)" />
+        <module name="room-web-app (9)" />
+        <module name="room-clr (20)" />
+        <module name="fizz-buzz (12)" />
+        <module name="room-clr (1)" />
+        <module name="booting-web (29)" />
+        <module name="fizz-buzz (2)" />
+        <module name="room-clr (16)" />
+        <module name="room-clr" />
+        <module name="booting-web (17)" />
+        <module name="room-clr (9)" />
+        <module name="booting-web (2)" />
+        <module name="room-cleaner-notifier (1)" />
+        <module name="room-web-app (13)" />
+        <module name="room-web-app (25)" />
+        <module name="room-web-app (1)" />
+        <module name="fizz-buzz (9)" />
+        <module name="room-web-app (8)" />
+        <module name="booting-web (30)" />
+        <module name="fizz-buzz (13)" />
+        <module name="fizz-buzz (1)" />
+        <module name="booting-web (14)" />
+        <module name="booting-web (26)" />
+        <module name="booting-web (38)" />
+        <module name="room-clr (8)" />
+        <module name="room-clr (15)" />
+        <module name="room-cleaner-notifier (2)" />
+        <module name="booting-web (7)" />
+        <module name="room-web-app (24)" />
+        <module name="room-web-app (12)" />
+        <module name="fizz-buzz (8)" />
+        <module name="fizz-buzz (14)" />
+        <module name="booting-web (31)" />
+        <module name="booting-web (15)" />
+        <module name="room-clr (7)" />
+        <module name="booting-web (27)" />
+        <module name="room-clr (14)" />
+        <module name="room-cleaner-notifier (3)" />
+        <module name="room-web-app (19)" />
+        <module name="booting-web (8)" />
+        <module name="room-web-app (7)" />
+        <module name="room-web-app (11)" />
+        <module name="room-web-app (23)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="room-web-app" target="18" />
+      <module name="room-web-app2" target="18" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="booting-web" options="-parameters" />
+      <module name="booting-web (1)" options="-parameters" />
+      <module name="booting-web (10)" options="-parameters" />
+      <module name="booting-web (11)" options="-parameters" />
+      <module name="booting-web (12)" options="-parameters" />
+      <module name="booting-web (13)" options="-parameters" />
+      <module name="booting-web (14)" options="-parameters" />
+      <module name="booting-web (15)" options="-parameters" />
+      <module name="booting-web (16)" options="-parameters" />
+      <module name="booting-web (17)" options="-parameters" />
+      <module name="booting-web (18)" options="-parameters" />
+      <module name="booting-web (19)" options="-parameters" />
+      <module name="booting-web (2)" options="-parameters" />
+      <module name="booting-web (20)" options="-parameters" />
+      <module name="booting-web (21)" options="-parameters" />
+      <module name="booting-web (22)" options="-parameters" />
+      <module name="booting-web (23)" options="-parameters" />
+      <module name="booting-web (24)" options="-parameters" />
+      <module name="booting-web (25)" options="-parameters" />
+      <module name="booting-web (26)" options="-parameters" />
+      <module name="booting-web (27)" options="-parameters" />
+      <module name="booting-web (28)" options="-parameters" />
+      <module name="booting-web (29)" options="-parameters" />
+      <module name="booting-web (3)" options="-parameters" />
+      <module name="booting-web (30)" options="-parameters" />
+      <module name="booting-web (31)" options="-parameters" />
+      <module name="booting-web (32)" options="-parameters" />
+      <module name="booting-web (33)" options="-parameters" />
+      <module name="booting-web (34)" options="-parameters" />
+      <module name="booting-web (35)" options="-parameters" />
+      <module name="booting-web (36)" options="-parameters" />
+      <module name="booting-web (37)" options="-parameters" />
+      <module name="booting-web (38)" options="-parameters" />
+      <module name="booting-web (4)" options="-parameters" />
+      <module name="booting-web (5)" options="-parameters" />
+      <module name="booting-web (6)" options="-parameters" />
+      <module name="booting-web (7)" options="-parameters" />
+      <module name="booting-web (8)" options="-parameters" />
+      <module name="booting-web (9)" options="-parameters" />
+      <module name="fizz-buzz" options="-parameters" />
+      <module name="fizz-buzz (1)" options="-parameters" />
+      <module name="fizz-buzz (10)" options="-parameters" />
+      <module name="fizz-buzz (11)" options="-parameters" />
+      <module name="fizz-buzz (12)" options="-parameters" />
+      <module name="fizz-buzz (13)" options="-parameters" />
+      <module name="fizz-buzz (14)" options="-parameters" />
+      <module name="fizz-buzz (15)" options="-parameters" />
+      <module name="fizz-buzz (16)" options="-parameters" />
+      <module name="fizz-buzz (17)" options="-parameters" />
+      <module name="fizz-buzz (18)" options="-parameters" />
+      <module name="fizz-buzz (2)" options="-parameters" />
+      <module name="fizz-buzz (3)" options="-parameters" />
+      <module name="fizz-buzz (4)" options="-parameters" />
+      <module name="fizz-buzz (5)" options="-parameters" />
+      <module name="fizz-buzz (6)" options="-parameters" />
+      <module name="fizz-buzz (7)" options="-parameters" />
+      <module name="fizz-buzz (8)" options="-parameters" />
+      <module name="fizz-buzz (9)" options="-parameters" />
+      <module name="room-cleaner-notifier" options="-parameters" />
+      <module name="room-cleaner-notifier (1)" options="-parameters" />
+      <module name="room-cleaner-notifier (2)" options="-parameters" />
+      <module name="room-cleaner-notifier (3)" options="-parameters" />
+      <module name="room-cleaner-notifier (4)" options="-parameters" />
+      <module name="room-clr" options="-parameters" />
+      <module name="room-clr (1)" options="-parameters" />
+      <module name="room-clr (10)" options="-parameters" />
+      <module name="room-clr (11)" options="-parameters" />
+      <module name="room-clr (12)" options="-parameters" />
+      <module name="room-clr (13)" options="-parameters" />
+      <module name="room-clr (14)" options="-parameters" />
+      <module name="room-clr (15)" options="-parameters" />
+      <module name="room-clr (16)" options="-parameters" />
+      <module name="room-clr (17)" options="-parameters" />
+      <module name="room-clr (18)" options="-parameters" />
+      <module name="room-clr (19)" options="-parameters" />
+      <module name="room-clr (2)" options="-parameters" />
+      <module name="room-clr (20)" options="-parameters" />
+      <module name="room-clr (3)" options="-parameters" />
+      <module name="room-clr (4)" options="-parameters" />
+      <module name="room-clr (5)" options="-parameters" />
+      <module name="room-clr (6)" options="-parameters" />
+      <module name="room-clr (7)" options="-parameters" />
+      <module name="room-clr (8)" options="-parameters" />
+      <module name="room-clr (9)" options="-parameters" />
+      <module name="room-web-app" options="" />
+      <module name="room-web-app (1)" options="-parameters" />
+      <module name="room-web-app (10)" options="-parameters" />
+      <module name="room-web-app (11)" options="-parameters" />
+      <module name="room-web-app (12)" options="-parameters" />
+      <module name="room-web-app (13)" options="-parameters" />
+      <module name="room-web-app (14)" options="-parameters" />
+      <module name="room-web-app (15)" options="-parameters" />
+      <module name="room-web-app (16)" options="-parameters" />
+      <module name="room-web-app (17)" options="-parameters" />
+      <module name="room-web-app (18)" options="-parameters" />
+      <module name="room-web-app (19)" options="-parameters" />
+      <module name="room-web-app (2)" options="-parameters" />
+      <module name="room-web-app (20)" options="-parameters" />
+      <module name="room-web-app (21)" options="-parameters" />
+      <module name="room-web-app (22)" options="-parameters" />
+      <module name="room-web-app (23)" options="-parameters" />
+      <module name="room-web-app (24)" options="-parameters" />
+      <module name="room-web-app (25)" options="-parameters" />
+      <module name="room-web-app (26)" options="-parameters" />
+      <module name="room-web-app (27)" options="-parameters" />
+      <module name="room-web-app (28)" options="-parameters" />
+      <module name="room-web-app (29)" options="-parameters" />
+      <module name="room-web-app (3)" options="-parameters" />
+      <module name="room-web-app (30)" options="-parameters" />
+      <module name="room-web-app (31)" options="-parameters" />
+      <module name="room-web-app (4)" options="-parameters" />
+      <module name="room-web-app (5)" options="-parameters" />
+      <module name="room-web-app (6)" options="-parameters" />
+      <module name="room-web-app (7)" options="-parameters" />
+      <module name="room-web-app (8)" options="-parameters" />
+      <module name="room-web-app (9)" options="-parameters" />
+    </option>
+  </component>
+</project>
