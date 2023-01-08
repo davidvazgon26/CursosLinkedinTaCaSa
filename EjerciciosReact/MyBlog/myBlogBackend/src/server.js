@@ -42,7 +42,7 @@ app.post('/api/articles/:name/comments',(req,res)=>{
 
     if(article){
         article.comments.push({postedBy,text});
-        res.send(article.comments)
+        res.send(article.comments) //comentario no necesario
     }else{
         res.send('That article dosen\'t exist'); //Se dejo en ingles solo para ver el uso de los escapes de simbolos especiales. 
     }
