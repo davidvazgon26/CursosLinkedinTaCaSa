@@ -1,5 +1,7 @@
 import express  from 'express';
+import {db , connectToDb} from './db.js'
 
+/**
 let articlesInfo = [{
     name: 'learn-react',
     upvotes: 0,
@@ -16,16 +18,44 @@ let articlesInfo = [{
     comments:[],
 }]
 
+ */
+
 const app = express();
 app.use(express.json()); //middleware para convertir las respuestas a json.
 
-app.put('/api/articles/:name/upvote',(req,res)=>{
 
+app.get('/api/articles/:name', async (req,res) => {
     const {name} = req.params;
-    const article = articlesInfo.find(a=>a.name === name);
+    // const client = new MongoClient('mongodb://127.0.0.1:27017');
+    // await client.connect();
+
+    // const db = client.db('react-blog-db');
+
+    const article = await db.collection('articles').findOne({name});
 
     if (article) {
-        article.upvotes +=1;
+        res.json(article)
+    } else {
+        res.sendStatus(404).send('Articulo no encontrado');    
+    }
+
+});
+ 
+app.put('/api/articles/:name/upvote', async(req,res)=>{
+
+    const {name} = req.params;
+    // const article = articlesInfo.find(a=>a.name === name);
+
+    // const client = new MongoClient('mongodb://127.0.0.1:27017');
+    // await client.connect();
+
+    // const db = client.db('react-blog-db');
+    await db.collection('articles').updateOne({name}, {$inc: {upvotes: 1}});
+    const article = await db.collection('articles').findOne({name});
+
+
+    if (article) {
+        // article.upvotes +=1;
         res.send(`El articulo ahora tiene ${article.upvotes} votos.`);
     } else {
         res.send('El articulo indicado no estiste');
@@ -34,14 +64,23 @@ app.put('/api/articles/:name/upvote',(req,res)=>{
 });
 
 
-app.post('/api/articles/:name/comments',(req,res)=>{
+app.post('/api/articles/:name/comments', async (req,res)=>{
     const {name} = req.params;
     const {postedBy, text} = req.body;
 
-    const article = articlesInfo.find(a=> a.name ===name);
+    // const article = articlesInfo.find(a=> a.name ===name);
+    // const client = new MongoClient('mongodb://127.0.0.1:27017');
+    // await client.connect();
+
+    // const db = client.db('react-blog-db');
+    await db.collection('articles').updateOne({name}, {$push:{comments: {postedBy,text}}});
+
+    const article = await db.collection('articles').findOne({name});
+    
+
 
     if(article){
-        article.comments.push({postedBy,text});
+        // article.comments.push({postedBy,text});
         res.send(article.comments) //comentario no necesario
     }else{
         res.send('That article dosen\'t exist'); //Se dejo en ingles solo para ver el uso de los escapes de simbolos especiales. 
@@ -70,6 +109,9 @@ app.get("/hola/:name/otroparametro/:lastName", (req,res)=>{  //recibiendo parame
 
 */
 
-app.listen(8000,()=>{
-    console.log("Servidor escuchando desde el puerto no 8000");
-});
+connectToDb(()=>{
+    console.log('Conexion exitosa a la BD')
+    app.listen(8000,()=>{
+        console.log("Servidor escuchando desde el puerto no 8000");
+    });
+})
