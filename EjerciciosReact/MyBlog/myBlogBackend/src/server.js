@@ -56,7 +56,7 @@ app.put('/api/articles/:name/upvote', async(req,res)=>{
 
     if (article) {
         // article.upvotes +=1;
-        res.send(`El articulo ahora tiene ${article.upvotes} votos.`);
+        res.json(article);
     } else {
         res.send('El articulo indicado no estiste');
     }
@@ -76,12 +76,10 @@ app.post('/api/articles/:name/comments', async (req,res)=>{
     await db.collection('articles').updateOne({name}, {$push:{comments: {postedBy,text}}});
 
     const article = await db.collection('articles').findOne({name});
-    
-
-
+   
     if(article){
         // article.comments.push({postedBy,text});
-        res.send(article.comments) //comentario no necesario
+        res.json(article) //comentario no necesario
     }else{
         res.send('That article dosen\'t exist'); //Se dejo en ingles solo para ver el uso de los escapes de simbolos especiales. 
     }
