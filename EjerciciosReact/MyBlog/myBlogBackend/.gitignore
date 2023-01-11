@@ -8,6 +8,8 @@
 
 /.idea/
 /mongo-db-data/
+mongo-db-data
+credencials.json
 
 # Log file
 *.log
