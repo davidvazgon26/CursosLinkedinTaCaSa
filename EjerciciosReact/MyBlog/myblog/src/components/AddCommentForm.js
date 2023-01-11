@@ -8,6 +8,7 @@ const [name, setName] = useState('');
 const [commentText, setCommentText] = useState('');
 const { user } = useUser();
 
+
 const addComment = async () => {
     const token = user && await user.getIdToken();
     const headers = token ? { authtoken: token } : {};
@@ -27,21 +28,22 @@ const addComment = async () => {
     return(
         <div id="add-comment-form">
             <h3>Agrega un commentario</h3>
-            <label>
+            {/* <label>
                 Nombre:
                 <input 
                 value={name}
                 onChange={e=> setName(e.target.value)}
                 type="text"/>
-            </label>
-            <label>
-                Commentario:
+            </label> */}
+            {/* <label> 
+                Commentario: */}
+                {user && <p>Tu post saldra como {user.email}</p>}
                 <textarea 
                 value={commentText}
                 onChange={e=>setCommentText(e.target.value)}
                 rows="4" 
                 cols="50"/>
-            </label>
+            {/* </label> */}
             <button onClick={addComment}>Agregar comentario</button>
         </div>
     )

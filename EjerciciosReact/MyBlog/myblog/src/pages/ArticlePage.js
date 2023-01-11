@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate, useNavigate } from "react-router-dom";
 import axios from 'axios'
 import NotFoundPage from "./NotFoundPage";
 import CommentList from "../components/CommentsList";
@@ -8,10 +8,13 @@ import useUser from "../hooks/useUser";  // Hook personalizado
 import articles from "./articles-content";
 
 const ArticlePage =  () => {
-    const [articleInfo, setArticleInfo] = useState({upvotes:0, comments:[]});
+    const [articleInfo, setArticleInfo] = useState({upvotes:0, comments:[], canUpvote: false});
+    const {canUpvote} = articleInfo;
     const { articleId } = useParams();
 
     const {user, isLoading} = useUser();
+
+    const navigate = useNavigate();
 
     useEffect(() => {
       const loadArtilceInfo = async() => {
@@ -22,8 +25,10 @@ const ArticlePage =  () => {
       setArticleInfo(newArticleInfo);
       // console.log(articleInfo)
       };
-      loadArtilceInfo();
-    }, []);
+
+      if(!isLoading) loadArtilceInfo();
+
+    }, [isLoading, user]);
 
   const article = articles.find((article) => article.name === articleId);
 
@@ -43,8 +48,8 @@ const ArticlePage =  () => {
       <h1>{article.title}</h1>
       <div className="upvotes-section">
       {user
-      ? <button onClick={addUpvote}>Vote</button> 
-      : <button> Inicia sesion para votar</button>}
+      ? <button onClick={addUpvote}>{canUpvote ? 'Votar': 'Ya votaste'}</button> 
+      : <button onClick={()=> navigate('/login')}> Inicia sesion para votar</button>}
       <p>Este articulo tiene {articleInfo.upvotes} upvote(s)</p>
       </div>
       {article.content.map((paragraph, i) => (
@@ -55,7 +60,7 @@ const ArticlePage =  () => {
         articleName={articleId}
         onArticleUpdated={updatedArticle => setArticleInfo(updatedArticle)}
       />
-      : <button> Inicia sesion para comentar</button>}
+      : <button onClick={()=>navigate('/login')}> Inicia sesion para comentar</button>}
       
       <CommentList  comments={articleInfo.comments}/>
     </>
