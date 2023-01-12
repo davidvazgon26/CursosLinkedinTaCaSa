@@ -11,6 +11,7 @@
 mongo-db-data
 credencials.json
 build
+.env
 
 # Log file
 *.log

@@ -1,0 +1,4 @@
+# Este archivo es solo para decirle o configurar a google el proyecto
+includes:
+- prod-env.yaml
+runtime: nodejs18
