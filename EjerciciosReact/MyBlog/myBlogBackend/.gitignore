@@ -12,7 +12,7 @@ mongo-db-data
 credencials.json
 build
 .env
-.yaml
+*.yaml
 
 # Log file
 *.log
