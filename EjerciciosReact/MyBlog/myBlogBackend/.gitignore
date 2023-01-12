@@ -10,6 +10,7 @@
 /mongo-db-data/
 mongo-db-data
 credencials.json
+build
 
 # Log file
 *.log

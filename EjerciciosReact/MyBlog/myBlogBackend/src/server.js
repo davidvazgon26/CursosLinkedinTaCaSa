@@ -1,7 +1,12 @@
 import fs from 'fs';
+import path from 'path';
 import admin from 'firebase-admin';
 import express from 'express';
 import { db, connectToDb } from './db.js';
+
+import {fileURLToPath} from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 
 const credentials = JSON.parse(
@@ -31,6 +36,13 @@ let articlesInfo = [{
 
 const app = express();
 app.use(express.json()); //middleware para convertir las respuestas a json.
+//El siguiente middleware es para levantar el servicio de frontend desde el backend
+app.use(express.static(path.join(__dirname, '../build')));
+
+app.get(/^(?!\/api).+/, (req, res)=> {
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+})
+
 
 app.use(async(req,res,next)=>{
     const {authtoken}= req.headers;
@@ -153,9 +165,11 @@ app.get("/hola/:name/otroparametro/:lastName", (req,res)=>{  //recibiendo parame
 
 */
 
+const PORT = process.env.PORT || 8000;
+
 connectToDb(()=>{
     console.log('Conexion exitosa a la BD')
-    app.listen(8000,()=>{
-        console.log("Servidor escuchando desde el puerto no 8000");
+    app.listen(PORT,()=>{
+        console.log("Servidor escuchando desde el puerto No "+PORT);
     });
 })
