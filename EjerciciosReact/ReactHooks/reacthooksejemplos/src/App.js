@@ -1,10 +1,18 @@
+import BtnChange from './components/BtnChange';
 import './App.css';
+import CheckConHook from './components/CheckConHook';
+import SelectStars from './components/SelectStars';
 
-function App({name}) {
+function App() {
   return (
     <div className="App">
-      <h1>Hola Hooks</h1>
-      <h3>Bienvenido a tu curso de hooks {name}</h3>
+    <h1>Ejercicios con hooks</h1>
+    <h4>Abra varios componentes en esta pagina</h4>
+    <BtnChange/>
+    <br/>
+    <CheckConHook/>
+    <br/>
+    <SelectStars total={10}/>
     </div>
   );
 }
