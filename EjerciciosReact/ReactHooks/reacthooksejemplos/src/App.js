@@ -2,6 +2,7 @@ import BtnChange from './components/BtnChange';
 import './App.css';
 import CheckConHook from './components/CheckConHook';
 import SelectStars from './components/SelectStars';
+import FirstUseEffect from './components/FirstUseEffect';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
     <CheckConHook/>
     <br/>
     <SelectStars total={10}/>
+    <br/>
+    <FirstUseEffect/>
     </div>
   );
 }
